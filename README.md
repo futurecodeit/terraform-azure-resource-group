@@ -1,7 +1,11 @@
-# Azure Resource Group (azurerm_resource_group) Module
+# Azure Resource Group (`azurerm_resource_group`) Module
 
-This module creates an Azure Resource Group and exposes **all documented arguments**: `name`, `location`, `managed_by`, `tags`, and the `timeouts` block (`create`, `read`, `update`, `delete`). See the Terraform Registry for details and defaults.  
-Reference: azurerm_resource_group (Terraform Registry). [1](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group)
+This Terraform module creates an **Azure Resource Group** and exposes
+**all documented arguments** supported by the
+[`azurerm_resource_group` resource]
+(https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group):
+`name`, `location`, `managed_by`, `tags`, and the `timeouts` block
+(`create`, `read`, `update`, `delete`).
 
 ## Usage
 
@@ -17,7 +21,7 @@ module "rg" {
     owner       = "platform-team"
   }
 
-  # Provide only if you want to override provider defaults
+  # Optional: override provider default timeouts
   timeouts = {
     create = "20m"
     read   = null
@@ -25,4 +29,3 @@ module "rg" {
     delete = "120m"
   }
 }
-```
