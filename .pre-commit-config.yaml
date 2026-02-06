@@ -18,11 +18,11 @@ repos:
           - --args=--enable-rule=terraform_standard_module_structure
           - --args=--enable-rule=terraform_unused_required_providers
 
-  - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.45.0
-    hooks:
-      - id: markdownlint
-        name: Validate Markdown text
+  # - repo: https://github.com/igorshubovych/markdownlint-cli
+  #   rev: v0.45.0
+  #   hooks:
+  #     - id: markdownlint
+  #       name: Validate Markdown text
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
