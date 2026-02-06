@@ -1,5 +1,5 @@
 name: "terraform pre-commit"
-run-name: terraform pre-commit ${{ github.event.repository.name }}
+run-name: terraform pre-commit on ${{ github.event.repository.name }}
 
 on:
   pull_request:
