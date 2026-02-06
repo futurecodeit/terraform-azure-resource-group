@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "this" {
-  name       = var.name
-  location   = var.location
+  name     = var.name
+  location = var.location
 
   # Optional arguments (pass null to omit)
   managed_by = var.managed_by
