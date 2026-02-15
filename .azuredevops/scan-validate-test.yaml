@@ -7,10 +7,15 @@ trigger:
 
 resources:
   repositories:
+    # - repository: templates
+    #   type: git
+    #   project: 'Pipelines'
+    #   name: devops-templates
+    #   ref: 'rg'
     - repository: templates
-      type: git
-      project: 'Pipelines'
-      name: devops-templates
+      type: github
+      connection: 'futurecodeit'                    # ← Service connection name
+      name: 'futurecodeit/devops-templates'      # ← GitHub owner/repo format
       ref: 'rg'
 
 stages:
