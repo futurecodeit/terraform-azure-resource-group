@@ -1,4 +1,4 @@
-name: "Unit testing"
+name: "Unit/Integration testing"
 
 on:
   pull_request:

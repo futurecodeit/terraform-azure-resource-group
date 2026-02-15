@@ -1,0 +1,16 @@
+trigger:
+  branches:
+    include:
+      - rg
+      - main
+      - release/*
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: devops-templates
+      ref: 'rg'
+
+stages:
+  - template: archetypes/terraform/azure-pipeline.yml@templates
