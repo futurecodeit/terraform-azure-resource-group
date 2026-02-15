@@ -14,8 +14,8 @@ resources:
     #   ref: 'rg'
     - repository: templates
       type: github
-      connection: 'futurecodeit'                    # ← Service connection name
-      name: 'futurecodeit/devops-templates'      # ← GitHub owner/repo format
+      endpoint: 'futurecodeit'
+      name: 'futurecodeit/devops-templates'
       ref: 'rg'
 
 stages:
