@@ -9,8 +9,9 @@ resources:
   repositories:
     - repository: templates
       type: git
+      project: 'Pipelines'
       name: devops-templates
       ref: 'rg'
 
 stages:
-  - template: archetypes/terraform/azure-pipeline.yml@templates
+  - template: infra-pipeline-templates/terraform/azure-pipeline.yml@templates
